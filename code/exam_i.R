@@ -12,6 +12,8 @@ df_mtcars <- as_tibble(mtcars,
 # Assign to: `mtcars_cyl6`
 mtcars_cyl6 <- subset(df_mtcars, cyl == 6)
 
+mtcars_cyl6
+
 # 2. Filter rows where number of gears (`gear`) is either 3 or 5
 # Use `%in%` to filter the `df_mtcars` dataset for these two `gear` values.
 # Assign to: `mtcars_g35`
@@ -116,6 +118,7 @@ g_bplot1 <- PlantGrowth %>%
              y = weight,
              fill = group)) +
   geom_boxplot()
+g_bplot1
 # 15. Boxplot + scatter plot of `weight` by `group`
 # Assign to: `g_bplot2`
 # Create a boxplot of `weight` by `group`, then overlay points showing individual observations.
